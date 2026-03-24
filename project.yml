@@ -1,0 +1,64 @@
+name: SpamBlocker
+options:
+  bundleIdPrefix: com.spamblocker
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "15.0"
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    TARGETED_DEVICE_FAMILY: "1"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+
+targets:
+  SpamBlocker:
+    type: application
+    platform: iOS
+    sources:
+      - SpamBlocker
+    dependencies:
+      - target: SpamBlockerKit
+      - target: CallDirectoryExt1
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamblocker.app
+        INFOPLIST_GENERATION_MODE: GeneratedFile
+        GENERATE_INFOPLIST_FILE: true
+        CODE_SIGN_ENTITLEMENTS: SpamBlocker/SpamBlocker.entitlements
+    entitlements:
+      path: SpamBlocker/SpamBlocker.entitlements
+
+  CallDirectoryExt1:
+    type: app-extension
+    platform: iOS
+    sources:
+      - CallDirectoryExt1
+    dependencies:
+      - target: SpamBlockerKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamblocker.app.calldirectory1
+        INFOPLIST_GENERATION_MODE: GeneratedFile
+        GENERATE_INFOPLIST_FILE: true
+        CODE_SIGN_ENTITLEMENTS: CallDirectoryExt1/CallDirectoryExt1.entitlements
+    info:
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: "$(PRODUCT_MODULE_NAME).CallDirectoryHandler"
+
+  SpamBlockerKit:
+    type: framework
+    platform: iOS
+    sources:
+      - SpamBlockerKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamblocker.kit
+        INFOPLIST_GENERATION_MODE: GeneratedFile
+        GENERATE_INFOPLIST_FILE: true
+        DEFINES_MODULE: true
