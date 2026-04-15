@@ -1,21 +1,24 @@
-# 프로젝트: {프로젝트명}
+# 프로젝트: SpamCall070
 
 ## 기술 스택
-- {프레임워크 (예: Next.js 15)}
-- {언어 (예: TypeScript strict mode)}
-- {스타일링 (예: Tailwind CSS)}
+- iOS (최소 지원 버전: iOS 16)
+- Swift 5.9+
+- CallKit (CXCallDirectoryExtension)
+- SwiftUI (메인 앱 UI)
+- xcodegen (프로젝트 생성)
 
 ## 아키텍처 규칙
-- CRITICAL: {절대 지켜야 할 규칙 1 (예: 모든 API 로직은 app/api/ 라우트 핸들러에서만 처리)}
-- CRITICAL: {절대 지켜야 할 규칙 2 (예: 클라이언트 컴포넌트에서 직접 외부 API를 호출하지 말 것)}
-- {일반 규칙 (예: 컴포넌트는 components/ 폴더에, 타입은 types/ 폴더에 분리)}
+- CRITICAL: 모든 익스텐션은 `CallBlockBase/CallDirectoryHandler.swift` 하나를 공유한다. 익스텐션별 코드 복사본을 만들지 말 것
+- CRITICAL: 차단 번호는 반드시 E.164 Int64 오름차순으로 등록해야 한다 (CallKit 요구사항)
+- CRITICAL: addBlockingEntry 루프에서 힙 할당(Array, String 등)을 하지 말 것. Int64 값 타입만 사용
+- 각 익스텐션은 번들 ID 접미사로 자기 담당 번호 구간을 자동 계산한다
+- 익스텐션당 등록 건수는 테스트로 확정된 한도 K의 90%로 설정한다
 
 ## 개발 프로세스
-- CRITICAL: 새 기능 구현 시 반드시 테스트를 먼저 작성하고, 테스트가 통과하는 구현을 작성할 것 (TDD)
 - 커밋 메시지는 conventional commits 형식을 따를 것 (feat:, fix:, docs:, refactor:)
+- 실제 기기 테스트 필수 (시뮬레이터는 CallKit 미지원)
 
 ## 명령어
-npm run dev      # 개발 서버
-npm run build    # 프로덕션 빌드
-npm run lint     # ESLint
-npm run test     # 테스트
+xcodegen generate          # Xcode 프로젝트 생성
+xcodebuild build           # 빌드
+xcodebuild test            # 테스트

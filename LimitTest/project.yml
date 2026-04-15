@@ -1,0 +1,1242 @@
+name: LimitTest
+options:
+  bundleIdPrefix: com.limittest
+  deploymentTarget:
+    iOS: "16.0"
+
+settings:
+  base:
+    DEVELOPMENT_TEAM: GA2LMK5XL2
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "5.0"
+
+targets:
+  LimitTestApp:
+    type: application
+    platform: iOS
+    sources:
+      - LimitTestApp
+    info:
+      path: LimitTestApp/Info.plist
+      properties:
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestApp.entitlements
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+    scheme:
+      testTargets: []
+      gatherCoverageData: false
+    dependencies:
+      - target: LimitTestExt000
+      - target: LimitTestExt001
+      - target: LimitTestExt002
+      - target: LimitTestExt003
+      - target: LimitTestExt004
+      - target: LimitTestExt005
+      - target: LimitTestExt006
+      - target: LimitTestExt007
+      - target: LimitTestExt008
+      - target: LimitTestExt009
+      - target: LimitTestExt010
+      - target: LimitTestExt011
+      - target: LimitTestExt012
+      - target: LimitTestExt013
+      - target: LimitTestExt014
+      - target: LimitTestExt015
+      - target: LimitTestExt016
+      - target: LimitTestExt017
+      - target: LimitTestExt018
+      - target: LimitTestExt019
+      - target: LimitTestExt020
+      - target: LimitTestExt021
+      - target: LimitTestExt022
+      - target: LimitTestExt023
+      - target: LimitTestExt024
+      - target: LimitTestExt025
+      - target: LimitTestExt026
+      - target: LimitTestExt027
+      - target: LimitTestExt028
+      - target: LimitTestExt029
+      - target: LimitTestExt030
+      - target: LimitTestExt031
+      - target: LimitTestExt032
+      - target: LimitTestExt033
+      - target: LimitTestExt034
+      - target: LimitTestExt035
+      - target: LimitTestExt036
+      - target: LimitTestExt037
+      - target: LimitTestExt038
+      - target: LimitTestExt039
+      - target: LimitTestExt040
+      - target: LimitTestExt041
+      - target: LimitTestExt042
+      - target: LimitTestExt043
+      - target: LimitTestExt044
+      - target: LimitTestExt045
+      - target: LimitTestExt046
+      - target: LimitTestExt047
+      - target: LimitTestExt048
+      - target: LimitTestExt049
+      - target: LimitTestExt050
+      - target: LimitTestExt051
+      - target: LimitTestExt052
+      - target: LimitTestExt053
+      - target: LimitTestExt054
+      - target: LimitTestExt055
+      - target: LimitTestExt056
+      - target: LimitTestExt057
+      - target: LimitTestExt058
+      - target: LimitTestExt059
+      - target: LimitTestExt060
+      - target: LimitTestExt061
+      - target: LimitTestExt062
+      - target: LimitTestExt063
+      - target: LimitTestExt064
+      - target: LimitTestExt065
+      - target: LimitTestExt066
+
+  LimitTestExt000:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt000/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 000"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt000
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt001:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt001/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 001"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt001
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt002:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt002/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 002"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt002
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt003:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt003/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 003"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt003
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt004:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt004/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 004"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt004
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt005:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt005/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 005"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt005
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt006:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt006/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 006"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt006
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt007:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt007/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 007"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt007
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt008:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt008/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 008"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt008
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt009:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt009/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 009"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt009
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt010:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt010/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 010"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt010
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt011:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt011/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 011"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt011
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt012:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt012/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 012"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt012
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt013:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt013/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 013"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt013
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt014:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt014/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 014"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt014
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt015:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt015/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 015"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt015
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt016:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt016/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 016"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt016
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt017:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt017/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 017"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt017
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt018:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt018/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 018"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt018
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt019:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt019/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 019"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt019
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt020:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt020/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 020"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt020
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt021:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt021/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 021"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt021
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt022:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt022/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 022"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt022
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt023:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt023/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 023"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt023
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt024:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt024/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 024"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt024
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt025:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt025/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 025"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt025
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt026:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt026/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 026"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt026
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt027:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt027/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 027"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt027
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt028:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt028/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 028"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt028
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt029:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt029/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 029"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt029
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt030:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt030/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 030"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt030
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt031:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt031/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 031"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt031
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt032:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt032/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 032"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt032
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt033:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt033/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 033"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt033
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt034:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt034/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 034"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt034
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt035:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt035/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 035"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt035
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt036:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt036/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 036"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt036
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt037:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt037/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 037"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt037
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt038:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt038/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 038"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt038
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt039:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt039/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 039"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt039
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt040:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt040/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 040"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt040
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt041:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt041/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 041"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt041
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt042:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt042/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 042"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt042
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt043:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt043/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 043"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt043
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt044:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt044/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 044"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt044
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt045:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt045/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 045"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt045
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt046:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt046/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 046"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt046
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt047:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt047/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 047"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt047
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt048:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt048/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 048"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt048
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt049:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt049/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 049"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt049
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt050:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt050/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 050"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt050
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt051:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt051/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 051"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt051
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt052:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt052/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 052"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt052
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt053:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt053/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 053"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt053
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt054:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt054/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 054"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt054
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt055:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt055/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 055"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt055
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt056:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt056/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 056"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt056
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt057:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt057/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 057"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt057
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt058:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt058/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 058"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt058
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt059:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt059/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 059"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt059
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt060:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt060/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 060"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt060
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt061:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt061/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 061"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt061
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt062:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt062/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 062"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt062
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt063:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt063/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 063"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt063
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt064:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt064/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 064"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt064
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt065:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt065/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 065"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt065
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements
+
+  LimitTestExt066:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: LimitTestBase
+    info:
+      path: LimitTestExt066/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 066"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.limittest50.app.LimitTestExt066
+        CODE_SIGN_ENTITLEMENTS: LimitTestApp/LimitTestExt.entitlements

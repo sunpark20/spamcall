@@ -1,8 +1,24 @@
-node_modules/
-.next/
-out/
-next-env.d.ts
-tsconfig.tsbuildinfo
+# Xcode
+*.xcodeproj/
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# xcodegen
+*.xcodeproj
+
+# Swift Package Manager
+.build/
+Packages/
+
+# OS
+.DS_Store
 
 # phase execution outputs
 phases/**/phase*-output.json
