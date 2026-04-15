@@ -122,9 +122,15 @@ struct ContentView: View {
             Button("전화 차단 및 발신자 확인 열기") {
                 openCallBlockingSettings()
             }
-            Text("설정 > 앱 > 전화 > 전화 차단 및 발신자 확인")
-                .font(.caption)
-                .foregroundStyle(.secondary)
+            if #available(iOS 18, *) {
+                Text("설정 > 앱 > 전화 > 전화 차단 및 발신자 확인")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            } else {
+                Text("설정 > 전화 > 전화 차단 및 발신자 확인")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
             Button("상태 새로고침") {
                 refreshStatuses()
             }

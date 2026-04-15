@@ -1,0 +1,1019 @@
+name: SpamCall070
+options:
+  bundleIdPrefix: com.spamcall070
+  deploymentTarget:
+    iOS: "16.0"
+
+settings:
+  base:
+    DEVELOPMENT_TEAM: GA2LMK5XL2
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "5.0"
+
+targets:
+  SpamCall070:
+    type: application
+    platform: iOS
+    sources:
+      - SpamCall070
+    info:
+      path: SpamCall070/Info.plist
+      properties:
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+    scheme:
+      testTargets: []
+      gatherCoverageData: false
+    dependencies:
+      - target: CallBlock000
+      - target: CallBlock001
+      - target: CallBlock002
+      - target: CallBlock003
+      - target: CallBlock004
+      - target: CallBlock005
+      - target: CallBlock006
+      - target: CallBlock007
+      - target: CallBlock008
+      - target: CallBlock009
+      - target: CallBlock010
+      - target: CallBlock011
+      - target: CallBlock012
+      - target: CallBlock013
+      - target: CallBlock014
+      - target: CallBlock015
+      - target: CallBlock016
+      - target: CallBlock017
+      - target: CallBlock018
+      - target: CallBlock019
+      - target: CallBlock020
+      - target: CallBlock021
+      - target: CallBlock022
+      - target: CallBlock023
+      - target: CallBlock024
+      - target: CallBlock025
+      - target: CallBlock026
+      - target: CallBlock027
+      - target: CallBlock028
+      - target: CallBlock029
+      - target: CallBlock030
+      - target: CallBlock031
+      - target: CallBlock032
+      - target: CallBlock033
+      - target: CallBlock034
+      - target: CallBlock035
+      - target: CallBlock036
+      - target: CallBlock037
+      - target: CallBlock038
+      - target: CallBlock039
+      - target: CallBlock040
+      - target: CallBlock041
+      - target: CallBlock042
+      - target: CallBlock043
+      - target: CallBlock044
+      - target: CallBlock045
+      - target: CallBlock046
+      - target: CallBlock047
+      - target: CallBlock048
+      - target: CallBlock049
+      - target: CallBlock050
+      - target: CallBlock051
+      - target: CallBlock052
+      - target: CallBlock053
+      - target: CallBlock054
+      - target: CallBlock055
+      - target: CallBlock056
+      - target: CallBlock057
+
+  CallBlock000:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock000/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 000"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock000
+
+  CallBlock001:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock001/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 001"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock001
+
+  CallBlock002:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock002/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 002"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock002
+
+  CallBlock003:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock003/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 003"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock003
+
+  CallBlock004:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock004/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 004"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock004
+
+  CallBlock005:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock005/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 005"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock005
+
+  CallBlock006:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock006/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 006"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock006
+
+  CallBlock007:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock007/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 007"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock007
+
+  CallBlock008:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock008/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 008"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock008
+
+  CallBlock009:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock009/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 009"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock009
+
+  CallBlock010:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock010/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 010"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock010
+
+  CallBlock011:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock011/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 011"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock011
+
+  CallBlock012:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock012/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 012"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock012
+
+  CallBlock013:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock013/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 013"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock013
+
+  CallBlock014:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock014/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 014"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock014
+
+  CallBlock015:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock015/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 015"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock015
+
+  CallBlock016:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock016/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 016"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock016
+
+  CallBlock017:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock017/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 017"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock017
+
+  CallBlock018:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock018/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 018"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock018
+
+  CallBlock019:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock019/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 019"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock019
+
+  CallBlock020:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock020/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 020"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock020
+
+  CallBlock021:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock021/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 021"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock021
+
+  CallBlock022:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock022/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 022"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock022
+
+  CallBlock023:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock023/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 023"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock023
+
+  CallBlock024:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock024/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 024"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock024
+
+  CallBlock025:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock025/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 025"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock025
+
+  CallBlock026:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock026/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 026"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock026
+
+  CallBlock027:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock027/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 027"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock027
+
+  CallBlock028:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock028/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 028"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock028
+
+  CallBlock029:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock029/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 029"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock029
+
+  CallBlock030:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock030/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 030"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock030
+
+  CallBlock031:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock031/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 031"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock031
+
+  CallBlock032:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock032/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 032"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock032
+
+  CallBlock033:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock033/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 033"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock033
+
+  CallBlock034:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock034/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 034"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock034
+
+  CallBlock035:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock035/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 035"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock035
+
+  CallBlock036:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock036/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 036"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock036
+
+  CallBlock037:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock037/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 037"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock037
+
+  CallBlock038:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock038/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 038"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock038
+
+  CallBlock039:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock039/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 039"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock039
+
+  CallBlock040:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock040/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 040"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock040
+
+  CallBlock041:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock041/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 041"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock041
+
+  CallBlock042:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock042/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 042"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock042
+
+  CallBlock043:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock043/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 043"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock043
+
+  CallBlock044:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock044/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 044"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock044
+
+  CallBlock045:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock045/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 045"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock045
+
+  CallBlock046:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock046/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 046"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock046
+
+  CallBlock047:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock047/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 047"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock047
+
+  CallBlock048:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock048/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 048"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock048
+
+  CallBlock049:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock049/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 049"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock049
+
+  CallBlock050:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock050/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 050"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock050
+
+  CallBlock051:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock051/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 051"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock051
+
+  CallBlock052:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock052/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 052"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock052
+
+  CallBlock053:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock053/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 053"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock053
+
+  CallBlock054:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock054/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 054"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock054
+
+  CallBlock055:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock055/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 055"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock055
+
+  CallBlock056:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock056/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 056"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock056
+
+  CallBlock057:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CallBlockBase
+    info:
+      path: CallBlock057/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "Block 057"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock057

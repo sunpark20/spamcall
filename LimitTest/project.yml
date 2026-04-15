@@ -19,6 +19,7 @@ targets:
     info:
       path: LimitTestApp/Info.plist
       properties:
+        CFBundleDisplayName: "070 스팸 전화 차단"
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait

@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "npm run lint 2>&1 && npm run build 2>&1 && npm run test 2>&1"
+            "command": "cd /Users/sunguk/0.code/spamcall2 && [ ! -f project.yml ] && echo 'SKIP: project.yml 없음 — 빌드 검증 생략' && exit 0 || xcodegen generate 2>&1 && xcodebuild build -project SpamCall070.xcodeproj -scheme SpamCall070 -destination 'generic/platform=iOS' CODE_SIGNING_ALLOWED=NO 2>&1"
           }
         ]
       }
