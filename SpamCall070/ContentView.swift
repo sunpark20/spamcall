@@ -5,7 +5,8 @@ struct ContentView: View {
 
     @StateObject private var manager = ExtensionManager()
     @Environment(\.scenePhase) private var scenePhase
-    @State private var reportCopied = false
+    @State private var reportSubmitted = false
+    @State private var reportSubmitting = false
 
     private var allEnabled: Bool {
         manager.statusChecked && manager.enabledCount == ExtensionManager.extensionCount
@@ -143,14 +144,26 @@ struct ContentView: View {
                         }
                     }
 
-                    Button(reportCopied ? "복사됨" : "에러 리포트 복사") {
-                        UIPasteboard.general.string = manager.generateReport()
-                        reportCopied = true
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                            reportCopied = false
+                    if reportSubmitting {
+                        HStack {
+                            ProgressView()
+                            Text("전송 중...")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
                         }
+                    } else {
+                        Button(reportSubmitted ? "신고 접수됨" : "에러 신고하기") {
+                            reportSubmitting = true
+                            Task {
+                                let success = await manager.submitReport()
+                                reportSubmitting = false
+                                reportSubmitted = success
+                            }
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .tint(.orange)
+                        .disabled(reportSubmitted)
                     }
-                    .font(.caption)
                 }
             }
 

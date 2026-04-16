@@ -234,6 +234,53 @@ final class ExtensionManager: ObservableObject {
         return lines.joined(separator: "\n")
     }
 
+    // MARK: - Error Report Submission
+
+    private static let webhookURL = "https://script.google.com/macros/s/AKfycbyOBS9hkGJNbLPDVhqPyn45lPfcs70CgFoPWPAW-ggR1o9ZTybvCb3lBpGslbfFo1sqBA/exec"
+
+    func submitReport() async -> Bool {
+        let report = generateReport()
+        let errorSummary: String
+        if reloadErrors.isEmpty {
+            errorSummary = "수동 신고"
+        } else {
+            errorSummary = "\(reloadErrors.count)개 실패"
+        }
+
+        let os = ProcessInfo.processInfo.operatingSystemVersion
+        var sysinfo = utsname()
+        uname(&sysinfo)
+        let machine = withUnsafePointer(to: &sysinfo.machine) {
+            $0.withMemoryRebound(to: CChar.self, capacity: 1) { String(cString: $0) }
+        }
+
+        let payload: [String: String] = [
+            "app_name": "SpamCall070",
+            "ios_version": "\(os.majorVersion).\(os.minorVersion).\(os.patchVersion)",
+            "device_model": machine,
+            "error_summary": errorSummary,
+            "full_report": report
+        ]
+
+        guard let url = URL(string: Self.webhookURL),
+              let body = try? JSONSerialization.data(withJSONObject: payload) else {
+            return false
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = body
+        request.timeoutInterval = 10
+
+        do {
+            let (_, response) = try await URLSession.shared.data(for: request)
+            return (response as? HTTPURLResponse)?.statusCode == 200
+        } catch {
+            return false
+        }
+    }
+
     // MARK: - Error Description
 
     private static func describeError(_ error: Error) -> (code: String, message: String) {
