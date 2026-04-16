@@ -1,0 +1,95 @@
+# App Store 메타데이터
+
+## 기본 정보
+- **앱 이름**: 070 스팸 전화 차단
+- **부제**: SPAMCALL BLOCK
+- **카테고리**: 유틸리티
+- **가격**: 무료
+- **연령 등급**: 4+
+- **프라이버시 정책 URL**: https://sunguk.dev/privacy/spamcall070
+
+## App Store 설명
+
+```
+070 스팸 전화, 이제 벨 소리조차 울리지 않습니다.
+
+통신사나 다른 앱은 전화가 온 뒤에 "스팸 의심" 팝업을 띄웁니다.
+이미 벨이 울리고, 화면이 켜지고, 잠에서 깨고 난 다음입니다.
+
+이 앱은 다릅니다.
+iOS 시스템 레벨에서 070 번호 1억개를 통째로 차단합니다.
+전화가 아예 도달하지 않습니다. 벨 소리도, 팝업도, 부재중도 없습니다.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+  비교          이 앱           통신사/타 앱
+  ──────────   ──────────     ──────────
+  차단 방식     벨 소리 전에     벨이 울린 후
+               원천 차단       팝업 알림
+  
+  차단 범위     070 전체        신고된 번호만
+               1억개           수만~수십만개
+
+  동작 위치     iOS 시스템      앱/서버
+               (배터리 0)      (백그라운드 필요)
+
+  개인정보      수집 없음       번호 수집 필요
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+한 번 설정하면 끝. 앱을 삭제하지 않는 한 영구 유지됩니다.
+
+[사용 방법]
+1. 설정 > 앱 > 전화 > 전화 차단 및 발신자 확인에서 58개 항목 모두 켜기
+2. 앱에서 '로딩 시작하기' 탭 (약 20분 소요)
+3. 완료 — 모든 070 번호가 차단됩니다
+
+[주의사항]
+• 모든 070 번호가 차단됩니다. 070으로 정상 통화를 받아야 하는 분은 사용하지 마세요.
+• 최초 설정 시 약 20분 소요됩니다. 설정 중 앱을 열어둔 상태로 유지해 주세요.
+• 카카오톡, FaceTime 등 인터넷 전화에는 영향 없습니다.
+```
+
+## 키워드
+070, 스팸차단, 보이스피싱, 전화차단, 스팸전화, 스팸, 차단, VoIP, 인터넷전화, 스팸필터
+
+## 심사 노트 (App Review Notes)
+
+```
+This app blocks all 100 million phone numbers in Korea's 070 (VoIP) range using Apple's CallKit Call Directory Extension API.
+
+Technical explanation for 58 extensions:
+- iOS CallKit Call Directory Extension has a per-extension limit of approximately 1.75 million entries
+- To register 100 million numbers (070-0000-0000 to 070-9999-9999), we need ceil(100M / 1.75M) = 58 extensions
+- All 58 extensions share a single source file (CallBlockBase/CallDirectoryHandler.swift). Each extension determines its assigned number range at runtime based on its bundle ID suffix
+- This is the same architectural pattern used by "WideProtect", an existing App Store app that uses ~80 extensions to block over 100 million numbers
+
+Why this app is needed:
+- Korea's 070 number range is heavily abused for spam calls and voice phishing (vishing)
+- Existing solutions (carrier services, other apps) only show a "suspected spam" popup AFTER the phone rings — they cannot prevent the call from reaching the device
+- iOS CallKit Call Directory Extension blocks calls at the system level BEFORE they ring, providing true call blocking
+- There is no way to block an entire number range on iOS — each number must be registered individually
+- This app provides complete coverage of the 070 range, protecting users from all 070-originated spam calls, especially those that disturb sleep
+
+Future plans:
+- Custom number range blocking (user-defined patterns)
+- Expansion to other commonly spoofed number ranges
+
+Privacy:
+- No network communication except optional user-initiated error reports
+- No personal data collection
+- No access to call content or contacts
+- App Store privacy label: "Data Not Collected"
+```
+
+## App Store 프라이버시 라벨
+- **데이터 수집**: 수집하지 않음
+- 단, "에러 신고하기" 버튼 사용 시 기기 모델/iOS 버전/에러 코드만 전송 (사용자 동의 하에)
+- 이 경우 "진단" 카테고리에서 "기기 ID", "성능 데이터"를 "앱 기능" 목적으로 선택
+
+## 스크린샷 가이드
+- 6.7인치 (iPhone 15 Pro Max 또는 동등) 필수, 최소 1장
+- 캡처할 상태:
+  1. Step 1 완료 + Step 2 활성 상태 (58/58 ✅ + 로딩 버튼)
+  2. Step 3 완료 상태 (070-XXXX-XXXX 1억건 차단됨)
+  3. 비교 이미지 (선택): 벨 울리는 타 앱 vs 벨 안 울리는 우리 앱
