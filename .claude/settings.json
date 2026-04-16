@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cd /Users/sunguk/0.code/spamcall2 && [ ! -f project.yml ] && echo 'SKIP: project.yml 없음 — 빌드 검증 생략' && exit 0 || xcodegen generate 2>&1 && xcodebuild build -project SpamCall070.xcodeproj -scheme SpamCall070 -destination 'generic/platform=iOS' CODE_SIGNING_ALLOWED=NO 2>&1"
+            "command": "bash /Users/sunguk/0.code/spamcall2/scripts/stop-hook.sh"
           }
         ]
       }
@@ -18,6 +18,10 @@
           {
             "type": "command",
             "command": "if echo \"$CLAUDE_TOOL_INPUT\" | grep -qE 'rm\\s+-rf|git\\s+push\\s+--force|git\\s+reset\\s+--hard|DROP\\s+TABLE'; then echo 'BLOCKED: 위험한 명령어가 감지되었습니다.' >&2; exit 1; fi"
+          },
+          {
+            "type": "command",
+            "command": "bash /Users/sunguk/0.code/spamcall2/scripts/circuit-breaker.sh"
           }
         ]
       }

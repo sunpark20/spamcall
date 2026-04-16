@@ -1,7 +1,5 @@
-# Xcode
+# Xcode (xcodegen이 project.yml에서 생성하므로 전체 무시)
 *.xcodeproj/
-!*.xcodeproj/project.pbxproj
-!*.xcodeproj/xcshareddata/
 *.xcworkspace/
 xcuserdata/
 DerivedData/
@@ -10,15 +8,22 @@ build/
 *.dSYM.zip
 *.dSYM
 
-# xcodegen
-*.xcodeproj
-
 # Swift Package Manager
 .build/
 Packages/
 
+# Python
+__pycache__/
+*.pyc
+
 # OS
 .DS_Store
+
+# LimitTest 생성 익스텐션 (generate_test_extensions.sh가 생성)
+LimitTest/LimitTestExt*/
+
+# 개인 디렉토리
+sunguk/
 
 # phase execution outputs
 phases/**/phase*-output.json
