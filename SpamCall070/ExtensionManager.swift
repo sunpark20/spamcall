@@ -169,6 +169,71 @@ final class ExtensionManager: ObservableObject {
         UserDefaults.standard.removeObject(forKey: Self.durationKey)
     }
 
+    // MARK: - Error Report
+
+    func generateReport() -> String {
+        var lines: [String] = []
+        lines.append("=== SpamCall070 에러 리포트 ===")
+        lines.append("")
+
+        // 기기
+        lines.append("[기기]")
+        var sysinfo = utsname()
+        uname(&sysinfo)
+        let machine = withUnsafePointer(to: &sysinfo.machine) {
+            $0.withMemoryRebound(to: CChar.self, capacity: 1) { String(cString: $0) }
+        }
+        lines.append("모델: \(machine)")
+        let os = ProcessInfo.processInfo.operatingSystemVersion
+        lines.append("iOS: \(os.majorVersion).\(os.minorVersion).\(os.patchVersion)")
+        if let attrs = try? FileManager.default.attributesOfFileSystem(forPath: NSHomeDirectory()),
+           let total = attrs[.systemSize] as? Int64,
+           let free = attrs[.systemFreeSize] as? Int64 {
+            lines.append("저장공간: \(free / 1_000_000_000)GB / \(total / 1_000_000_000)GB")
+        }
+        lines.append("")
+
+        // 익스텐션
+        lines.append("[익스텐션]")
+        lines.append("활성화: \(enabledCount) / \(Self.extensionCount)")
+        if enabledCount < Self.extensionCount {
+            let disabled = bundleIDs.enumerated().compactMap { i, _ in
+                i < enabledCount ? nil : String(format: "Block %03d", i)
+            }
+            if !disabled.isEmpty {
+                lines.append("미활성: \(disabled.prefix(10).joined(separator: ", "))")
+            }
+        }
+        lines.append("")
+
+        // Reload 결과
+        lines.append("[Reload 결과]")
+        let successCount = Self.extensionCount - reloadErrors.count
+        lines.append("성공: \(successCount) / \(Self.extensionCount)")
+        if !reloadErrors.isEmpty {
+            lines.append("실패:")
+            for error in reloadErrors {
+                lines.append("  Block \(error.id.suffix(3)) — \(error.code): \(error.message)")
+            }
+        }
+        if reloadDuration > 0 {
+            let minutes = Int(reloadDuration) / 60
+            let seconds = Int(reloadDuration) % 60
+            lines.append("소요: \(minutes)분 \(seconds)초")
+        }
+        lines.append("")
+
+        // 앱 상태
+        lines.append("[앱 상태]")
+        lines.append("로딩 완료: \(isLoaded)")
+        if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
+           let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String {
+            lines.append("버전: \(version) (\(build))")
+        }
+
+        return lines.joined(separator: "\n")
+    }
+
     // MARK: - Error Description
 
     private static func describeError(_ error: Error) -> (code: String, message: String) {
@@ -200,6 +265,14 @@ final class ExtensionManager: ObservableObject {
             }
         }
 
-        return ("other", "\(nsError.domain):\(nsError.code) — 기기를 재시작해 보세요.")
+        // SQLite 에러
+        if nsError.domain == "com.apple.callkit.database.sqlite" {
+            if nsError.code == 19 {
+                return ("sqlite:19", "DB 충돌. 앱 삭제 → 기기 재시작 → 앱 재설치 후 다시 시도해 주세요.")
+            }
+            return ("sqlite:\(nsError.code)", "DB 오류 \(nsError.code). 앱 삭제 → 기기 재시작 → 앱 재설치 후 다시 시도해 주세요.")
+        }
+
+        return ("other:\(nsError.code)", "\(nsError.domain):\(nsError.code) — 기기를 재시작해 보세요.")
     }
 }

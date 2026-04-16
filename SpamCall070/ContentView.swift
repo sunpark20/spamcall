@@ -5,6 +5,7 @@ struct ContentView: View {
 
     @StateObject private var manager = ExtensionManager()
     @Environment(\.scenePhase) private var scenePhase
+    @State private var reportCopied = false
 
     private var allEnabled: Bool {
         manager.statusChecked && manager.enabledCount == ExtensionManager.extensionCount
@@ -141,6 +142,15 @@ struct ContentView: View {
                                 .foregroundStyle(.secondary)
                         }
                     }
+
+                    Button(reportCopied ? "복사됨" : "에러 리포트 복사") {
+                        UIPasteboard.general.string = manager.generateReport()
+                        reportCopied = true
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                            reportCopied = false
+                        }
+                    }
+                    .font(.caption)
                 }
             }
 
