@@ -104,7 +104,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 000"
+        CFBundleDisplayName: "070-0000~0174"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock000
@@ -120,7 +120,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 001"
+        CFBundleDisplayName: "070-0175~0349"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock001
@@ -136,7 +136,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 002"
+        CFBundleDisplayName: "070-0350~0524"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock002
@@ -152,7 +152,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 003"
+        CFBundleDisplayName: "070-0525~0699"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock003
@@ -168,7 +168,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 004"
+        CFBundleDisplayName: "070-0700~0874"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock004
@@ -184,7 +184,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 005"
+        CFBundleDisplayName: "070-0875~1049"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock005
@@ -200,7 +200,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 006"
+        CFBundleDisplayName: "070-1050~1224"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock006
@@ -216,7 +216,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 007"
+        CFBundleDisplayName: "070-1225~1399"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock007
@@ -232,7 +232,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 008"
+        CFBundleDisplayName: "070-1400~1574"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock008
@@ -248,7 +248,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 009"
+        CFBundleDisplayName: "070-1575~1749"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock009
@@ -264,7 +264,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 010"
+        CFBundleDisplayName: "070-1750~1924"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock010
@@ -280,7 +280,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 011"
+        CFBundleDisplayName: "070-1925~2099"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock011
@@ -296,7 +296,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 012"
+        CFBundleDisplayName: "070-2100~2274"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock012
@@ -312,7 +312,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 013"
+        CFBundleDisplayName: "070-2275~2449"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock013
@@ -328,7 +328,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 014"
+        CFBundleDisplayName: "070-2450~2624"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock014
@@ -344,7 +344,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 015"
+        CFBundleDisplayName: "070-2625~2799"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock015
@@ -360,7 +360,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 016"
+        CFBundleDisplayName: "070-2800~2974"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock016
@@ -376,7 +376,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 017"
+        CFBundleDisplayName: "070-2975~3149"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock017
@@ -392,7 +392,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 018"
+        CFBundleDisplayName: "070-3150~3324"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock018
@@ -408,7 +408,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 019"
+        CFBundleDisplayName: "070-3325~3499"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock019
@@ -424,7 +424,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 020"
+        CFBundleDisplayName: "070-3500~3674"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock020
@@ -440,7 +440,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 021"
+        CFBundleDisplayName: "070-3675~3849"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock021
@@ -456,7 +456,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 022"
+        CFBundleDisplayName: "070-3850~4024"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock022
@@ -472,7 +472,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 023"
+        CFBundleDisplayName: "070-4025~4199"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock023
@@ -488,7 +488,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 024"
+        CFBundleDisplayName: "070-4200~4374"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock024
@@ -504,7 +504,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 025"
+        CFBundleDisplayName: "070-4375~4549"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock025
@@ -520,7 +520,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 026"
+        CFBundleDisplayName: "070-4550~4724"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock026
@@ -536,7 +536,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 027"
+        CFBundleDisplayName: "070-4725~4899"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock027
@@ -552,7 +552,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 028"
+        CFBundleDisplayName: "070-4900~5074"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock028
@@ -568,7 +568,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 029"
+        CFBundleDisplayName: "070-5075~5249"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock029
@@ -584,7 +584,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 030"
+        CFBundleDisplayName: "070-5250~5424"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock030
@@ -600,7 +600,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 031"
+        CFBundleDisplayName: "070-5425~5599"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock031
@@ -616,7 +616,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 032"
+        CFBundleDisplayName: "070-5600~5774"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock032
@@ -632,7 +632,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 033"
+        CFBundleDisplayName: "070-5775~5949"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock033
@@ -648,7 +648,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 034"
+        CFBundleDisplayName: "070-5950~6124"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock034
@@ -664,7 +664,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 035"
+        CFBundleDisplayName: "070-6125~6299"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock035
@@ -680,7 +680,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 036"
+        CFBundleDisplayName: "070-6300~6474"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock036
@@ -696,7 +696,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 037"
+        CFBundleDisplayName: "070-6475~6649"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock037
@@ -712,7 +712,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 038"
+        CFBundleDisplayName: "070-6650~6824"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock038
@@ -728,7 +728,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 039"
+        CFBundleDisplayName: "070-6825~6999"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock039
@@ -744,7 +744,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 040"
+        CFBundleDisplayName: "070-7000~7174"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock040
@@ -760,7 +760,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 041"
+        CFBundleDisplayName: "070-7175~7349"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock041
@@ -776,7 +776,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 042"
+        CFBundleDisplayName: "070-7350~7524"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock042
@@ -792,7 +792,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 043"
+        CFBundleDisplayName: "070-7525~7699"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock043
@@ -808,7 +808,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 044"
+        CFBundleDisplayName: "070-7700~7874"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock044
@@ -824,7 +824,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 045"
+        CFBundleDisplayName: "070-7875~8049"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock045
@@ -840,7 +840,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 046"
+        CFBundleDisplayName: "070-8050~8224"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock046
@@ -856,7 +856,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 047"
+        CFBundleDisplayName: "070-8225~8399"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock047
@@ -872,7 +872,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 048"
+        CFBundleDisplayName: "070-8400~8574"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock048
@@ -888,7 +888,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 049"
+        CFBundleDisplayName: "070-8575~8749"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock049
@@ -904,7 +904,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 050"
+        CFBundleDisplayName: "070-8750~8924"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock050
@@ -920,7 +920,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 051"
+        CFBundleDisplayName: "070-8925~9099"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock051
@@ -936,7 +936,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 052"
+        CFBundleDisplayName: "070-9100~9274"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock052
@@ -952,7 +952,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 053"
+        CFBundleDisplayName: "070-9275~9449"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock053
@@ -968,7 +968,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 054"
+        CFBundleDisplayName: "070-9450~9624"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock054
@@ -984,7 +984,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 055"
+        CFBundleDisplayName: "070-9625~9799"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock055
@@ -1000,7 +1000,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 056"
+        CFBundleDisplayName: "070-9800~9974"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock056
@@ -1016,7 +1016,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "Block 057"
+        CFBundleDisplayName: "070-9975~9999"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock057
