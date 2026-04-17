@@ -14,6 +14,7 @@ final class ExtensionManager: ObservableObject {
 
     @Published var enabledCount = 0
     @Published var statusChecked = false
+    @Published var statusCheckProgress = 0
 
     @Published var isReloading = false
     @Published var reloadProgress = 0
@@ -23,6 +24,7 @@ final class ExtensionManager: ObservableObject {
     @Published var isLoaded: Bool
 
     private let manager = CXCallDirectoryManager.sharedInstance
+    private var statusCheckTask: Task<Void, Never>?
     private static let loadedKey = "reloadCompleted"
     private static let durationKey = "reloadDuration"
 
@@ -34,12 +36,15 @@ final class ExtensionManager: ObservableObject {
     // MARK: - Status
 
     func refreshStatuses() {
+        statusCheckTask?.cancel()
         statusChecked = false
         enabledCount = 0
+        statusCheckProgress = 0
 
-        Task {
+        statusCheckTask = Task {
             var count = 0
             for batch in stride(from: 0, to: bundleIDs.count, by: 10) {
+                guard !Task.isCancelled else { return }
                 let end = min(batch + 10, bundleIDs.count)
                 let slice = Array(bundleIDs[batch..<end])
                 await withTaskGroup(of: Bool.self) { group in
@@ -58,6 +63,7 @@ final class ExtensionManager: ObservableObject {
                     }
                 }
                 enabledCount = count
+                statusCheckProgress = min(batch + 10, bundleIDs.count)
             }
             statusChecked = true
         }
@@ -278,6 +284,25 @@ final class ExtensionManager: ObservableObject {
             return (response as? HTTPURLResponse)?.statusCode == 200
         } catch {
             return false
+        }
+    }
+
+    // MARK: - Block Range
+
+    struct BlockRange: Identifiable {
+        let index: Int
+        let range: String
+        var id: Int { index }
+    }
+
+    var allRanges: [BlockRange] {
+        let k = 1_750_000
+        return (0..<Self.extensionCount).map { idx in
+            let start = idx * k
+            let end = min((idx + 1) * k - 1, 99_999_999)
+            let s = String(format: "070-%04d-%04d", start / 10000, start % 10000)
+            let e = String(format: "070-%04d-%04d", end / 10000, end % 10000)
+            return BlockRange(index: idx, range: "\(s) ~ \(e)")
         }
     }
 

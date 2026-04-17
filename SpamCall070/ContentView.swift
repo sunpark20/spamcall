@@ -7,6 +7,7 @@ struct ContentView: View {
     @Environment(\.scenePhase) private var scenePhase
     @State private var reportSubmitted = false
     @State private var reportSubmitting = false
+    @State private var statusCheckTimedOut = false
 
     private var allEnabled: Bool {
         manager.statusChecked && manager.enabledCount == ExtensionManager.extensionCount
@@ -20,17 +21,14 @@ struct ContentView: View {
         Form {
             // MARK: - Step 1
             Section {
-                Text("1. 설정에서 58개 ON 하기")
-                    .font(.headline)
-                    .foregroundStyle(allEnabled ? Color.secondary : Color.primary)
+                Button("1. [전화 차단 및 발신자 확인]에서 58개 항목 ON 하기") {
+                    openCallBlockingSettings()
+                }
+                .font(.headline)
+                .buttonStyle(.borderedProminent)
+                .disabled(!manager.statusChecked || manager.isReloading)
 
                 if manager.statusChecked {
-                    Button("전화 차단 및 발신자 확인 열기") {
-                        openCallBlockingSettings()
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .disabled(manager.isReloading)
-
                     HStack {
                         Text("\(manager.enabledCount) / \(ExtensionManager.extensionCount)개 활성화")
                             .monospacedDigit()
@@ -39,10 +37,19 @@ struct ContentView: View {
                                 .foregroundStyle(.green)
                         }
                     }
+                } else if statusCheckTimedOut {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("시스템이 준비 중입니다.")
+                            .foregroundStyle(.orange)
+                        Text("앱을 닫고 30분 후 다시 열어주세요.")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
                 } else {
                     HStack {
                         ProgressView()
-                        Text("확인 중... 잠시 기다려주세요.")
+                        Text("시스템 확인 중... (10분 정도 소요)")
+                            .font(.caption)
                             .foregroundStyle(.secondary)
                     }
                 }
@@ -51,17 +58,18 @@ struct ContentView: View {
                     Text("로딩 중에는 설정의 '전화 차단 및 발신자 확인' 메뉴가 일시적으로 사라집니다. 로딩 완료 후 다시 나타납니다.")
                         .font(.caption)
                         .foregroundStyle(.orange)
-                } else if !allEnabled {
+                } else if manager.statusChecked && !allEnabled {
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("설정 > 앱 > 전화 > 전화 차단 및 발신자 확인")
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
-                        if #available(iOS 26, *) {
-                            Text("iOS 26: 목록 가장 아래쪽에 있습니다.")
+                        if #available(iOS 18, *) {
+                            Text("설정 > 앱 > 전화 > 전화 차단 및 발신자 확인")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        } else {
+                            Text("설정 > 전화 > 전화 차단 및 발신자 확인")
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
                         }
-                        Text("10개 ON 후 10초 대기를 반복해서 모두 켜주세요. 1억개 로딩이라 버벅이고 오류날 수 있으니, 창을 나갔다 들어오며 모두 ON 될 때까지 반복해주세요.")
+                        Text("5개 ON, 5초 대기를 반복하며 모두 켜주세요. 버벅이면 창을 나갔다 들어오세요.")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }
@@ -128,6 +136,20 @@ struct ContentView: View {
                             .monospacedDigit()
                             .foregroundStyle(.secondary)
                     }
+
+                    DisclosureGroup("차단 구역 상세 (\(ExtensionManager.extensionCount)개)") {
+                        ForEach(manager.allRanges) { range in
+                            HStack(spacing: 8) {
+                                Text(String(format: "%03d", range.index))
+                                    .font(.caption)
+                                    .fontWeight(.medium)
+                                Text(range.range)
+                                    .font(.caption)
+                                    .monospaced()
+                                    .foregroundStyle(.secondary)
+                            }
+                        }
+                    }
                 }
             }
 
@@ -168,16 +190,18 @@ struct ContentView: View {
             }
 
             // MARK: - 초기화
+            if manager.reloadProgress > 0 || manager.isLoaded || manager.reloadDuration > 0 {
             Section {
-                Button("결과 초기화") {
+                Button("로딩 상태 초기화") {
                     manager.resetState()
                 }
-                .foregroundStyle(.red)
-                .font(.caption)
+                .buttonStyle(.borderedProminent)
+                .tint(.red)
 
-                Text("문제가 생기면 앱 삭제 → 기기 재시작 → 앱 재설치 순서로 진행하세요.")
+                Text("로딩 진행 상태를 초기화하고 2단계부터 다시 시작합니다. 로딩이 중간에 실패하거나 다시 진행하고 싶을 때 사용하세요.")
                     .font(.caption)
                     .foregroundStyle(.secondary)
+            }
             }
         }
         .onAppear {
@@ -186,6 +210,17 @@ struct ContentView: View {
         .onChange(of: scenePhase) { phase in
             if phase == .active {
                 manager.refreshStatuses()
+            }
+        }
+        .task(id: manager.statusChecked) {
+            if !manager.statusChecked {
+                statusCheckTimedOut = false
+                try? await Task.sleep(for: .seconds(120))
+                if !manager.statusChecked {
+                    statusCheckTimedOut = true
+                }
+            } else {
+                statusCheckTimedOut = false
             }
         }
     }
