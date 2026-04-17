@@ -19,6 +19,7 @@ targets:
     info:
       path: SpamCall070/Info.plist
       properties:
+        CFBundleDisplayName: "차단"
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
@@ -104,7 +105,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-0000~0174"
+        CFBundleDisplayName: "1. 070 00000000 - 01749999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock000
@@ -120,7 +121,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-0175~0349"
+        CFBundleDisplayName: "2. 070 01750000 - 03499999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock001
@@ -136,7 +137,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-0350~0524"
+        CFBundleDisplayName: "3. 070 03500000 - 05249999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock002
@@ -152,7 +153,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-0525~0699"
+        CFBundleDisplayName: "4. 070 05250000 - 06999999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock003
@@ -168,7 +169,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-0700~0874"
+        CFBundleDisplayName: "5. 070 07000000 - 08749999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock004
@@ -184,7 +185,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-0875~1049"
+        CFBundleDisplayName: "6. 070 08750000 - 10499999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock005
@@ -200,7 +201,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-1050~1224"
+        CFBundleDisplayName: "7. 070 10500000 - 12249999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock006
@@ -216,7 +217,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-1225~1399"
+        CFBundleDisplayName: "8. 070 12250000 - 13999999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock007
@@ -232,7 +233,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-1400~1574"
+        CFBundleDisplayName: "9. 070 14000000 - 15749999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock008
@@ -248,7 +249,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-1575~1749"
+        CFBundleDisplayName: "10. 070 15750000 - 17499999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock009
@@ -264,7 +265,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-1750~1924"
+        CFBundleDisplayName: "11. 070 17500000 - 19249999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock010
@@ -280,7 +281,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-1925~2099"
+        CFBundleDisplayName: "12. 070 19250000 - 20999999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock011
@@ -296,7 +297,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-2100~2274"
+        CFBundleDisplayName: "13. 070 21000000 - 22749999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock012
@@ -312,7 +313,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-2275~2449"
+        CFBundleDisplayName: "14. 070 22750000 - 24499999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock013
@@ -328,7 +329,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-2450~2624"
+        CFBundleDisplayName: "15. 070 24500000 - 26249999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock014
@@ -344,7 +345,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-2625~2799"
+        CFBundleDisplayName: "16. 070 26250000 - 27999999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock015
@@ -360,7 +361,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-2800~2974"
+        CFBundleDisplayName: "17. 070 28000000 - 29749999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock016
@@ -376,7 +377,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-2975~3149"
+        CFBundleDisplayName: "18. 070 29750000 - 31499999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock017
@@ -392,7 +393,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-3150~3324"
+        CFBundleDisplayName: "19. 070 31500000 - 33249999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock018
@@ -408,7 +409,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-3325~3499"
+        CFBundleDisplayName: "20. 070 33250000 - 34999999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock019
@@ -424,7 +425,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-3500~3674"
+        CFBundleDisplayName: "21. 070 35000000 - 36749999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock020
@@ -440,7 +441,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-3675~3849"
+        CFBundleDisplayName: "22. 070 36750000 - 38499999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock021
@@ -456,7 +457,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-3850~4024"
+        CFBundleDisplayName: "23. 070 38500000 - 40249999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock022
@@ -472,7 +473,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-4025~4199"
+        CFBundleDisplayName: "24. 070 40250000 - 41999999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock023
@@ -488,7 +489,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-4200~4374"
+        CFBundleDisplayName: "25. 070 42000000 - 43749999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock024
@@ -504,7 +505,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-4375~4549"
+        CFBundleDisplayName: "26. 070 43750000 - 45499999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock025
@@ -520,7 +521,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-4550~4724"
+        CFBundleDisplayName: "27. 070 45500000 - 47249999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock026
@@ -536,7 +537,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-4725~4899"
+        CFBundleDisplayName: "28. 070 47250000 - 48999999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock027
@@ -552,7 +553,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-4900~5074"
+        CFBundleDisplayName: "29. 070 49000000 - 50749999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock028
@@ -568,7 +569,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-5075~5249"
+        CFBundleDisplayName: "30. 070 50750000 - 52499999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock029
@@ -584,7 +585,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-5250~5424"
+        CFBundleDisplayName: "31. 070 52500000 - 54249999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock030
@@ -600,7 +601,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-5425~5599"
+        CFBundleDisplayName: "32. 070 54250000 - 55999999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock031
@@ -616,7 +617,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-5600~5774"
+        CFBundleDisplayName: "33. 070 56000000 - 57749999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock032
@@ -632,7 +633,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-5775~5949"
+        CFBundleDisplayName: "34. 070 57750000 - 59499999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock033
@@ -648,7 +649,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-5950~6124"
+        CFBundleDisplayName: "35. 070 59500000 - 61249999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock034
@@ -664,7 +665,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-6125~6299"
+        CFBundleDisplayName: "36. 070 61250000 - 62999999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock035
@@ -680,7 +681,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-6300~6474"
+        CFBundleDisplayName: "37. 070 63000000 - 64749999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock036
@@ -696,7 +697,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-6475~6649"
+        CFBundleDisplayName: "38. 070 64750000 - 66499999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock037
@@ -712,7 +713,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-6650~6824"
+        CFBundleDisplayName: "39. 070 66500000 - 68249999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock038
@@ -728,7 +729,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-6825~6999"
+        CFBundleDisplayName: "40. 070 68250000 - 69999999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock039
@@ -744,7 +745,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-7000~7174"
+        CFBundleDisplayName: "41. 070 70000000 - 71749999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock040
@@ -760,7 +761,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-7175~7349"
+        CFBundleDisplayName: "42. 070 71750000 - 73499999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock041
@@ -776,7 +777,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-7350~7524"
+        CFBundleDisplayName: "43. 070 73500000 - 75249999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock042
@@ -792,7 +793,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-7525~7699"
+        CFBundleDisplayName: "44. 070 75250000 - 76999999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock043
@@ -808,7 +809,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-7700~7874"
+        CFBundleDisplayName: "45. 070 77000000 - 78749999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock044
@@ -824,7 +825,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-7875~8049"
+        CFBundleDisplayName: "46. 070 78750000 - 80499999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock045
@@ -840,7 +841,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-8050~8224"
+        CFBundleDisplayName: "47. 070 80500000 - 82249999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock046
@@ -856,7 +857,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-8225~8399"
+        CFBundleDisplayName: "48. 070 82250000 - 83999999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock047
@@ -872,7 +873,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-8400~8574"
+        CFBundleDisplayName: "49. 070 84000000 - 85749999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock048
@@ -888,7 +889,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-8575~8749"
+        CFBundleDisplayName: "50. 070 85750000 - 87499999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock049
@@ -904,7 +905,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-8750~8924"
+        CFBundleDisplayName: "51. 070 87500000 - 89249999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock050
@@ -920,7 +921,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-8925~9099"
+        CFBundleDisplayName: "52. 070 89250000 - 90999999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock051
@@ -936,7 +937,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-9100~9274"
+        CFBundleDisplayName: "53. 070 91000000 - 92749999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock052
@@ -952,7 +953,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-9275~9449"
+        CFBundleDisplayName: "54. 070 92750000 - 94499999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock053
@@ -968,7 +969,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-9450~9624"
+        CFBundleDisplayName: "55. 070 94500000 - 96249999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock054
@@ -984,7 +985,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-9625~9799"
+        CFBundleDisplayName: "56. 070 96250000 - 97999999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock055
@@ -1000,7 +1001,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-9800~9974"
+        CFBundleDisplayName: "57. 070 98000000 - 99749999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock056
@@ -1016,7 +1017,7 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "070-9975~9999"
+        CFBundleDisplayName: "58. 070 99750000 - 99999999 범위"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.spamcall070.app.CallBlock057

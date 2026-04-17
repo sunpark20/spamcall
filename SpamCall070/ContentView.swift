@@ -39,9 +39,9 @@ struct ContentView: View {
                     }
                 } else if statusCheckTimedOut {
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("시스템이 준비 중입니다.")
+                        Text("시스템이 응답하지 않습니다.")
                             .foregroundStyle(.orange)
-                        Text("앱을 닫고 30분 후 다시 열어주세요.")
+                        Text("기기를 재부팅한 후 앱을 다시 열어주세요.")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }

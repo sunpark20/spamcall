@@ -1,5 +1,6 @@
 import Foundation
 import CallKit
+import os.log
 
 @MainActor
 final class ExtensionManager: ObservableObject {
@@ -25,6 +26,7 @@ final class ExtensionManager: ObservableObject {
 
     private let manager = CXCallDirectoryManager.sharedInstance
     private var statusCheckTask: Task<Void, Never>?
+    nonisolated(unsafe) private static let log = Logger(subsystem: "com.spamcall070.app", category: "StatusCheck")
     private static let loadedKey = "reloadCompleted"
     private static let durationKey = "reloadDuration"
 
@@ -42,29 +44,45 @@ final class ExtensionManager: ObservableObject {
         statusCheckProgress = 0
 
         statusCheckTask = Task {
+            let startDate = Date()
+            NSLog("[SC] 시작 58개")
             var count = 0
             for batch in stride(from: 0, to: bundleIDs.count, by: 10) {
-                guard !Task.isCancelled else { return }
+                guard !Task.isCancelled else {
+                    NSLog("[SC] 취소 batch=%d", batch)
+                    return
+                }
+                let batchNum = batch / 10 + 1
                 let end = min(batch + 10, bundleIDs.count)
                 let slice = Array(bundleIDs[batch..<end])
-                await withTaskGroup(of: Bool.self) { group in
+                NSLog("[SC] batch %d/6 시작", batchNum)
+                await withTaskGroup(of: (String, Bool).self) { group in
                     for bid in slice {
                         group.addTask {
+                            let suffix = String(bid.suffix(3))
+                            NSLog("[SC] %@ 호출", suffix)
                             do {
                                 let status = try await self.manager.enabledStatusForExtension(withIdentifier: bid)
-                                return status == .enabled
+                                let enabled = status == .enabled
+                                NSLog("[SC] %@ → %@", suffix, enabled ? "ON" : "OFF")
+                                return (bid, enabled)
                             } catch {
-                                return false
+                                NSLog("[SC] %@ 에러: %@", suffix, error.localizedDescription)
+                                return (bid, false)
                             }
                         }
                     }
-                    for await isEnabled in group {
+                    for await (_, isEnabled) in group {
                         if isEnabled { count += 1 }
                     }
                 }
                 enabledCount = count
                 statusCheckProgress = min(batch + 10, bundleIDs.count)
+                let elapsed = Date().timeIntervalSince(startDate)
+                NSLog("[SC] batch %d/6 완료 (%.1fs)", batchNum, elapsed)
             }
+            let total = Date().timeIntervalSince(startDate)
+            NSLog("[SC] 완료 %d/%d (%.1fs)", count, Self.extensionCount, total)
             statusChecked = true
         }
     }
