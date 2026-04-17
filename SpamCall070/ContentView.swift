@@ -8,6 +8,7 @@ struct ContentView: View {
     @State private var reportSubmitted = false
     @State private var reportSubmitting = false
     @State private var statusCheckTimedOut = false
+    @State private var statusCheckSlow = false
 
     private var allEnabled: Bool {
         manager.statusChecked && manager.enabledCount == ExtensionManager.extensionCount
@@ -30,13 +31,16 @@ struct ContentView: View {
 
                 if manager.statusChecked {
                     HStack {
-                        Text("\(manager.enabledCount) / \(ExtensionManager.extensionCount)개 활성화")
+                        Spacer()
+                        Text("(\(manager.enabledCount)/\(ExtensionManager.extensionCount)) 활성화")
                             .monospacedDigit()
                         if allEnabled {
                             Image(systemName: "checkmark.circle.fill")
                                 .foregroundStyle(.green)
                         }
+                        Spacer()
                     }
+                    .alignmentGuide(.listRowSeparatorLeading) { _ in 0 }
                 } else if statusCheckTimedOut {
                     VStack(alignment: .leading, spacing: 4) {
                         Text("시스템이 응답하지 않습니다.")
@@ -48,9 +52,15 @@ struct ContentView: View {
                 } else {
                     HStack {
                         ProgressView()
-                        Text("시스템 확인 중... (10분 정도 소요)")
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
+                        if statusCheckSlow {
+                            Text("시스템 확인 중... (최대 10분 소요)")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        } else {
+                            Text("확인 중...")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
                     }
                 }
 
@@ -69,7 +79,7 @@ struct ContentView: View {
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
                         }
-                        Text("5개 ON, 5초 대기를 반복하며 모두 켜주세요. 버벅이면 창을 나갔다 들어오세요.")
+                        Text("초대량 block 진행으로 랙이나 오류가 발생합니다. 버벅이면 창을 나갔다 들어오며 58개를 활성화 해주세요.")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }
@@ -78,14 +88,12 @@ struct ContentView: View {
 
             // MARK: - Step 2
             Section {
-                Text("2. 1억건 로딩 시작하기")
-                    .font(.headline)
-                    .foregroundStyle(reloadDone ? Color.secondary : (allEnabled ? Color.primary : Color.secondary))
-
                 if manager.isReloading {
+                    Text("2. 1억건 로딩 중...")
+                        .font(.headline)
                     HStack {
                         ProgressView()
-                        Text("Block \(manager.reloadCurrent) 로딩 중...")
+                        Text("Block \(manager.reloadCurrent)")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }
@@ -107,13 +115,14 @@ struct ContentView: View {
                     .buttonStyle(.borderedProminent)
                     .tint(.red)
                 } else {
-                    Button("로딩 시작하기 (20분 소요)") {
+                    Button("2. 1억건 로딩 시작하기") {
                         manager.reloadAll()
                     }
+                    .font(.headline)
                     .buttonStyle(.borderedProminent)
                     .disabled(!allEnabled || reloadDone)
 
-                    Text("창을 유지해야 합니다. 중간에 전화 등으로 끊길 시 다시 눌러주세요.")
+                    Text("최대 30분 소요. 앱 화면을 유지해 주세요.")
                         .font(.caption)
                         .foregroundStyle(.secondary)
                 }
@@ -127,6 +136,9 @@ struct ContentView: View {
                             .font(.headline)
                             .foregroundStyle(.green)
                         Text("영구 유지됩니다. 앱을 삭제하지 않는 한 계속 차단됩니다.")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                        Text("받고 싶은 070 번호는 연락처에 등록하면 정상 수신됩니다.")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                         let minutes = Int(manager.reloadDuration) / 60
@@ -205,22 +217,30 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            manager.refreshStatuses()
+            if !manager.isReloading {
+                manager.refreshStatuses()
+            }
         }
         .onChange(of: scenePhase) { phase in
-            if phase == .active {
+            if phase == .active && !manager.isReloading {
                 manager.refreshStatuses()
             }
         }
         .task(id: manager.statusChecked) {
             if !manager.statusChecked {
                 statusCheckTimedOut = false
-                try? await Task.sleep(for: .seconds(120))
+                statusCheckSlow = false
+                try? await Task.sleep(for: .seconds(5))
+                if !manager.statusChecked {
+                    statusCheckSlow = true
+                }
+                try? await Task.sleep(for: .seconds(115))
                 if !manager.statusChecked {
                     statusCheckTimedOut = true
                 }
             } else {
                 statusCheckTimedOut = false
+                statusCheckSlow = false
             }
         }
     }
